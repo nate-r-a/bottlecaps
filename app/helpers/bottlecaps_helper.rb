@@ -1,0 +1,2 @@
+module BottlecapsHelper
+end
