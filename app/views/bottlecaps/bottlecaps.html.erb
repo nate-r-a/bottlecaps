@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<!-- TO DO: Add if-then to determine if the brand part is really needed (ie, if there is no particular brand or if it's the same as the parent --> 
+  <body>
+    <% @bottlecaps.each do |cap| %>
+      <div class="col-sm-2 col-xs-3">
+        <div class="thumbnail">
+          <div class="caption">
+            <p><%= cap.drink %></p>
+            <%= image_tag (cap.image || "http://placehold.it/200/200"), class: "icon" %>
+            <p><small>from <%= cap.brand %>, by <%= cap.parent %></small></p>
+            <% cap.tag_list.each do |tag| %>
+              <a href="/tag/<%= tag %>" class="btn btn-xs btn-default"><%= tag %></a>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </body>
+</html>

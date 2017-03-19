@@ -1,6 +1,3 @@
-require "mysql2"
-
-client = Mysql2::Client.new(:host => "104.198.223.70", :username => "nate_ra", :password => "", :database => "c9")
 
 @b = Bottlecap.new
 
