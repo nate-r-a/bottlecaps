@@ -54,5 +54,6 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   root "bottlecaps#index"
-  get "tag/:tag", to: "bottlecaps#tag"
+  get "tagged/:tag", to: "bottlecaps#tagged", as: "search"
+  get "tagged/:tag", to: "bottlecaps#tagged", as: "tag"
 end
