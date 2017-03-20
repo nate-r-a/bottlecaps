@@ -17,7 +17,7 @@ Bottlecap.create(drink: "Sangria Soda", brand: "Topo Chico", parent: "Topo Chico
 Bottlecap.create(drink: "Palma Louca", brand: "Cerveja Brasil", parent: "Cerveja Brasil", favorite: false, cap_detail_list: "blue, gold", pinned: false)
 Bottlecap.create(drink: "Pineapple Soda", brand: "Fanta", parent: "Coca-Cola", favorite: false, cap_detail_list: "yellow", pinned: false)
 Bottlecap.create(drink: "Virgil's Root Beer", brand: "Virgil's", parent: "Reed's", favorite: false, cap_detail_list: "white, gold, red", pinned: false)
-Bottlecap.create(drink: "Summer Shandy", brand: "Jacon Leinenkugel Brewing Company", parent: "SABMiller", favorite: false, cap_detail_list: "light blue, lemon", pinned: false)
+Bottlecap.create(drink: "Summer Shandy", brand: "Jacob Leinenkugel Brewing Company", parent: "SABMiller", favorite: false, cap_detail_list: "light blue, lemon", pinned: false)
 Bottlecap.create(drink: "Unspecified", brand: "Seagram's", parent: "Diageo", favorite: false, cap_detail_list: "blue, palm trees", pinned: false)
 Bottlecap.create(drink: "Session Black Lager", brand: "Full Sail Brewing Company", parent: "Full Sail Brewing Company", favorite: false, cap_detail_list: "dark blue, dark gray", pinned: false)
 Bottlecap.create(drink: "Old Speckled Hen", brand: "Morland Brewery", parent: "Greene King Brewery", favorite: false, cap_detail_list: "red, gold, Morland Brewery", pinned: false)

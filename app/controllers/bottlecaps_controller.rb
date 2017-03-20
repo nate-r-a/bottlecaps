@@ -8,10 +8,17 @@ class BottlecapsController < ApplicationController
     render 'bottlecaps'
   end
   
+  def search
+    search_term = params[:tag]
+    redirect_to "/tagged/#{search_term}"
+  end
+  
   def tagged
     @bottlecaps = Bottlecap.tagged_with(params[:tag], wild: true, any: true)
     # @bottlecaps += Bottlecap.where("drink ILIKE ? OR brand ILIKE ? OR parent ILIKE ?", "%#{params[:tag]}%", "%#{params[:tag]}%", "%#{params[:tag]}%")
     # @bottlecaps += Bottlecap.where("drink ILIKE ?", params[:tag])
+    
+    # redirect_to "/tagged/#{params[:tag]}"
     render 'bottlecaps'
   end
   

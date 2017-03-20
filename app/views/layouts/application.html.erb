@@ -18,8 +18,8 @@
       <div class="container-fluid">
         <a href=<%= root_path %> class="navbar-brand">Bottlecaps</a>
       </div>
-      <%= form_tag(search_path(:tag), :method => "get") do %>
-        <%= text_field_tag :tag, placeholder: "Search" %>
+      <%= form_tag(search_path, :method => "get") do %>
+        <%= text_field_tag :tag, nil, placeholder: "Search" %>
       <% end %>
     </nav>
   
