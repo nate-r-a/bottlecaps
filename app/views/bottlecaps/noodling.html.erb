@@ -1,0 +1,28 @@
+<!-- TO DO: Add if-then to determine if the brand part is really needed (ie, if there is no particular brand or if it's the same as the parent --> 
+<head>
+  <%= stylesheet_link_tag "noodling.css" %>
+
+</head>
+
+<div class="container">
+  <div class="grid">
+  <% @bottlecaps.each do |cap| %>
+    <div class="grid-item clearfix">
+      <div class="grid-item-content">
+        <p class="drink-name"><%= cap.drink %></p>
+        <img src="http://placehold.it/100x100/00bfff" class="thumb">
+        <div class="details">
+          <p class="drink-name-big"><%= cap.drink %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+  </div>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="assets/testing.js"></script>

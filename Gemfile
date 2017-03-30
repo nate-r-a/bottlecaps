@@ -10,6 +10,9 @@ gem 'mysql2'
 
 gem 'acts-as-taggable-on', '~> 4.0'
 
+gem "font-awesome-rails"
+
+
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'

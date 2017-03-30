@@ -8,6 +8,11 @@ class BottlecapsController < ApplicationController
     render 'bottlecaps'
   end
   
+  def noodling
+    @bottlecaps = Bottlecap.all
+    render 'noodling'
+  end
+  
   def search
     search_term = params[:tag]
     redirect_to "/tagged/#{search_term}"

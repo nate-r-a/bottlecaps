@@ -82,7 +82,7 @@ Bottlecap.create(drink: "Carta Blanca", brand: "Cuauhtémoc Moctezuma Brewery", 
 Bottlecap.create(drink: "White Wing", brand: "Shiner", parent: "Spoetzl Brewery", favorite: false, cap_detail_list: "orange, white, brown, bird", pinned: false, notes: nil)
 Bottlecap.create(drink: "Sunset Wheat", brand: "Jacob Leinenkugel Brewing Company", parent: "Anheuser-Busch InBev", favorite: false, cap_detail_list: "blue, dark blue, gold, white, boat", pinned: false)
 Bottlecap.create(drink: "Twisted Pretzel Wheat", brand: "Shock Top", parent: "Anheuser-Busch InBev", favorite: false, cap_detail_list: "black, brown, yellow", pinned: false, notes: "It's got a pretzel on it!")
-Bottlecap.create(drink: "", brand: "", parent: "", favorite: false, cap_detail_list: "", pinned: false, notes: nil)
+Bottlecap.create(drink: "Non-Alcoholic Wheat", brand: "Erdinger Weissbrau", parent: "Erdinger Weissbrau", favorite: false, cap_detail_list: "blue, red, white, gold, wheat", pinned: false, notes: nil)
 # Bottlecap.create(drink: "", brand: "", parent: "", favorite: false, cap_detail_list: "", pinned: false, notes: nil)
 # Bottlecap.create(drink: "", brand: "", parent: "", favorite: false, cap_detail_list: "", pinned: false, notes: nil)
 # Bottlecap.create(drink: "", brand: "", parent: "", favorite: false, cap_detail_list: "", pinned: false, notes: nil)

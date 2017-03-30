@@ -1,0 +1,121 @@
+.fa {
+  font-size: 20px;
+}
+
+* { box-sizing: border-box; }
+
+img {
+  vertical-align: none;
+}
+
+body { font-family: sans-serif; }
+
+
+.container {
+  width: 1100px;
+  text-align: center;
+}
+
+.thumb {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.drink-name {
+  font-size: 12px;
+  padding: inherit 4px;
+  margin: 0;
+  overflow:hidden; 
+  white-space:nowrap; 
+  text-overflow: ellipsis;
+  color: white;
+}
+
+.drink-name.is-expanded {
+  display: none;
+}
+
+.drink-name-big {
+  display: none;
+}
+
+.drink-name-big.is-expanded {
+  display: block;
+}
+
+.grid {
+  /*background: #EEE;*/
+  max-width: 1200px;
+}
+
+.grid-item {
+  float: left;
+  margin: 2px;
+}
+
+/* item is invisible, but used for layout */
+.grid-item,
+.grid-item-content {
+  width: 120px;
+  height: 150px;
+  
+}
+
+/* grid-item-content is visible, and transitions size */
+.grid-item-content {
+  overflow: hidden;
+  width: 120px;
+  /*height: 120px;*/
+  background: #D26;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+  -webkit-transition: width 0.4s, height 0.4s;
+          transition: width 0.4s, height 0.4s;
+}
+
+.thumb {
+  width: 100%;
+  transition: width 0.4s;
+  /*border-radius: 3px;*/
+}
+
+.thumb.is-expanded {
+  width: 200px;
+  border: 3px solid white;
+  border-radius: 3px;
+  float: left;
+}
+
+.grid-item:hover .grid-item-content {
+  border-color: white;
+  background: #A2C;
+  cursor: pointer;
+}
+
+/* both item and item content change size */
+.grid-item.is-expanded,
+.grid-item.is-expanded .grid-item-content {
+  width: 492px;
+  height: 240px;
+}
+
+
+.grid-item.is-expanded {
+  z-index: 2;
+  text-align: left;
+}
+
+.grid-item-content .is-expanded {
+  
+}
+
+.grid-item.is-expanded .grid-item-content {
+  padding-left: 12px;
+  padding-top: 12px;
+  background: #F90;
+}
+/*.fa:hover {*/
+/*  font-size: 40px;*/
+/*}*/
