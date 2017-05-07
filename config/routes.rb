@@ -53,9 +53,12 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  
+  resources :bottlecaps
   root "bottlecaps#index"
   get 'noodling' => "bottlecaps#noodling"
   # get "search/:tag", to: "bottlecaps#search", as: "search"
   get 'search' => 'bottlecaps#search'
   get "tagged/:tag", to: "bottlecaps#tagged", as: "tag"
+  
 end

@@ -1,12 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <title>Workspace</title>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -17,10 +12,10 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <a href=<%= root_path %> class="navbar-brand">Bottlecaps</a>
+        <%= form_tag(search_path, :method => "get") do %>
+          <%= text_field_tag :tag, nil, placeholder: "Search" %>
+        <% end %>
       </div>
-      <%= form_tag(search_path, :method => "get") do %>
-        <%= text_field_tag :tag, nil, placeholder: "Search" %>
-      <% end %>
     </nav>
   
   <%= yield %>

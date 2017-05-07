@@ -12,6 +12,12 @@ gem 'acts-as-taggable-on', '~> 4.0'
 
 gem "font-awesome-rails"
 
+gem 'haml'
+
+gem 'bootstrap-sass', '~> 3.3.6'
+
+gem 'simple_form'
+
 
 
 # Use sqlite3 as the database for Active Record

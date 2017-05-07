@@ -1,0 +1,24 @@
+.container
+  .row
+    .col-md-6-offset-3
+      .panel.panel-default
+        .panel-heading New bottlecap
+        .panel-body
+          = simple_form_for @bottlecap do |f|
+            = f.input :drink
+            .row
+              .col-md-6.col-sm-6.inputs
+                = f.input :brand
+                = f.input :parent
+              .col-md-6.col-sm-6.selections
+                = simple_form_for @bottlecap do |x|
+                  = x.input :brand, as: :select, label: "Existing brands", include_blank: :true, collection: @brands
+                  = x.input :parent, as: :select, label: "Existing parents", include_blank: :true, collection: @parents
+            = f.label :favorite
+            = f.check_box :favorite
+            = f.label :pinned
+            = f.check_box :pinned
+            = f.input :cap_detail_list
+            = f.input :notes, as: :text
+            .divider
+            = f.button :submit

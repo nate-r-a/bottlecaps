@@ -8,6 +8,12 @@ class BottlecapsController < ApplicationController
     render 'bottlecaps'
   end
   
+  def new
+    @bottlecap = Bottlecap.new
+    @brands = Bottlecap.uniq.pluck(:brand).sort
+    @parents = Bottlecap.uniq.pluck(:parent).sort
+  end
+  
   def noodling
     @bottlecaps = Bottlecap.all
     render 'noodling'
